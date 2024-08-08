@@ -1,9 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { Ui } from './ui';
 
-import { within } from '@storybook/testing-library';
-import { expect } from '@storybook/jest';
-
+import { within, userEvent, expect, fn } from '@storybook/test';
 const meta: Meta<typeof Ui> = {
   component: Ui,
   title: 'Ui',
